@@ -11,6 +11,9 @@ node_modules/
 .agent
 agent
 
+# Local guides
+agent.md
+
 tokens.css
 design-tokens*.json
 build-tokens.js
