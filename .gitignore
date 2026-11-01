@@ -7,17 +7,16 @@ node_modules/
 .env
 .env*.local
 
-# Aliases
-.agent
-agent
-
-# Local guides
+# Internal guidelines, specifications & rule files
+AGENTS.md
+SKILLS.md
+caseflo-prd-md.md
 agent.md
+.agents/
+.agent/
+agent/
 
+# Tokens build files
 tokens.css
 design-tokens*.json
 build-tokens.js
-
-# antigravity rules
-.agents/rules/client.md
-.agents/rules/security.md
