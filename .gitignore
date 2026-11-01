@@ -1,7 +1,19 @@
+# Dependencies & build
+node_modules/
+.next/
+*.tsbuildinfo
+
+# Environment
+.env
+.env*.local
+
+# Aliases
+.agent
+agent
+
 tokens.css
 design-tokens*.json
 build-tokens.js
-
 
 # antigravity rules
 .agents/rules/client.md

@@ -1,0 +1,43 @@
+CASEFLO - TASK TWO: SCAFFOLDING PLAN & STATED ASSUMPTIONS
+Captured: 2026-11-01T20:56:00 UTC
+
+================================================================================
+1. PROPOSED FOUNDATION ARCHITECTURE
+================================================================================
+- Framework: Next.js (App Router) with TypeScript in strict mode.
+- Styling: tokens.css mounted globally at root layout (app/layout.tsx).
+  Zero hardcoded hex values, zero arbitrary px font sizes or shadows.
+- Directory Structure (per .agents/rules/structure.md):
+  * src/app/
+    - layout.tsx (Root HTML & body with DM Sans and tokens.css)
+    - page.tsx (Minimalistic 100vh Home Screen)
+    - globals.css (Base resets importing tokens.css)
+  * src/components/
+    - Base UI wrappers (if needed) adhering to semantic tokens.
+  * src/lib/
+    - utils.ts (Class merging and shared helpers)
+    - env.ts (Environment schema with Zod per .agents/rules/env.md)
+  * src/server/
+    - server-only modules with 'import "server-only";' on line 1.
+- Scope Boundary:
+  * Minimal foundation setup and single 100vh landing page.
+  * No complex product features (no live payment gateways, no AI retrieval endpoints, no full auth flows).
+
+================================================================================
+2. STATED TECHNICAL ASSUMPTIONS
+================================================================================
+1. Package Manager: npm is used strictly per AGENTS.md rules.
+2. Styling Approach: Pure CSS variables defined in tokens.css combined with standard CSS/module styles to avoid third-party CSS utility conflicts.
+3. Server Boundary: Any module inside src/server/ must begin with 'import "server-only";' on line 1.
+4. Database Safety: No database migration or mutation commands (prisma migrate, db push) will be run by the agent.
+5. Home Screen Scope: A clean, responsive 100vh screen representing CaseFlo with brand badge, tagline, navigation prompt, and legal privacy reassurance.
+
+================================================================================
+3. VERIFICATION & AUDIT CHECKLIST
+================================================================================
+- [ ] Next.js app builds without TypeScript errors (npm run build).
+- [ ] No raw hex values present in newly created styles.
+- [ ] DM Sans font and tokens.css correctly linked.
+- [ ] Server starts cleanly on standard local port (e.g., 3000).
+- [ ] Exactly matched .agents/rules/structure.md directory conventions.
+
