@@ -5,7 +5,7 @@ A "false success" happens when your code looks like it worked, but under the hoo
 
 For example, a button says "Saved!" and gives a green checkmark, but the data never actually saved to the database. Or a screen looks clean and private, but anyone opening their browser's inspection tool can see someone else's legal records.
 
-In real life, a false success is much worse than an obvious error. If an app crashes, you know it is broken and you fix it. If an app fails silently, you think everything is fine while real problems pile up.
+In real life, a false success is much worse than an obvious error. If an app crashes, you know it is broken and you fix it. If an error is swallowed and hidden, you think everything is fine while real problems pile up.
 
 ---
 
