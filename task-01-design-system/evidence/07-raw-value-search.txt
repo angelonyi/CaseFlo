@@ -1,0 +1,23 @@
+CASEFLO — TASK ONE  
+Evidence 07: Raw Colour Search
+
+**PowerShell command:**
+
+```powershell
+Get-ChildItem -Path . -Recurse -File -Include *.html,*.css,*.js,*.ts,*.tsx,*.jsx |
+Where-Object { $_.FullName -notmatch '[\\/](node_modules|\.git|task-01-design-system)[\\/]' -and $_.Name -ne 'tokens.css' } |
+Select-String -Pattern '#[0-9A-Fa-f]{3,8}\b|rgba?\s*\(|hsla?\s*\('
+```
+
+**Command output:**
+
+```text
+build-tokens.js:154:    const color = val.color ?? '#000000';
+build-tokens.js:160:    if (shadowColor === '#0044e3ff' ||
+build-tokens.js:162:      shadowColor = `rgba(0, 68, 227, ${opacity})`;
+```
+
+**Result:**
+
+The search returned three matches in `build-tokens.js`. These are used in token-generation logic: a fallback colour, a brand-colour comparison, and shadow-colour generation.
+

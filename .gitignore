@@ -1,5 +1,8 @@
-index.html
-signup.html
 tokens.css
 design-tokens*.json
 build-tokens.js
+
+
+# antigravity rules
+.agents/rules/client.md
+.agents/rules/security.md

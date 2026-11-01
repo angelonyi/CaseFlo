@@ -15,7 +15,7 @@ Use CSS variables to ensure the design system remains the single source of truth
 After generating the CSS file, list the variables created and confirm that the colour roles reference primitive variables rather than raw hex values.
 ```
 
-**What happened:** It wrote a script, the role in tokens.css had no hex value copied in, for example it had `--color-primary: var(--palette-primary-40)`, instead of `#0E7C7B`. It worked perfectly.
+**What happened:** It wrote a script, the role in tokens.css had no hex value copied in, for example it had `--color-primary: var(--color-role-primary)` referencing `--primitive-color-palettes-primary-primary40`, instead of hardcoding `#0044E3`. It worked perfectly.
 
 **Did it work?** Yes.
 

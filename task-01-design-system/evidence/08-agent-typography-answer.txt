@@ -1,0 +1,35 @@
+### **1. Main Page / Brand Heading (`<h1>CaseFlo</h1>`)**
+
+1. **Typography Role and Size:**
+   - **Headline Large** 
+2. **Typography Specifications:**
+   - **Font Family:** `'DM Sans', sans-serif`
+   - **Font Weight:** `500`
+   - **Font Size:** `32px`
+   - **Letter Spacing:** `-1.8px`
+   - **Line Height:** `48px`
+3. **Source of Values:**
+   - Defined in and referenced directly from the project's design tokens (tokens.css), which was generated from `design-tokens..json`. They are **not hardcoded**.
+4. **Exact CSS Variables Used in `index.html`:**
+   - `font: var(--typography-headline-large);`
+   - `letter-spacing: var(--typography-headline-large-letter-spacing);` *(Individual variables in `tokens.css`: `--typography-headline-large-font-family`, `--typography-headline-large-font-size`, `--typography-headline-large-font-weight`, `--typography-headline-large-line-height`, `--typography-headline-large-letter-spacing`)*
+
+---
+
+### **2. Sign-Up Card Section Heading (`<h2>Create your account</h2>`)**
+
+If referring to the primary form heading inside the card:
+
+1. **Typography Role and Size:**
+   - **Headline Small**
+2. **Typography Specifications:**
+   - **Font Family:** `'DM Sans', sans-serif`
+   - **Font Weight:** `500`
+   - **Font Size:** `28px`
+   - **Letter Spacing:** `-1.2px`
+   - **Line Height:** `42px`
+3. **Source of Values:**
+   - Defined in and referenced directly from the design tokens in tokens.css. They are **not hardcoded**.
+4. **Exact CSS Variables Used in `index.html`:**
+   - `font: var(--typography-headline-small);`
+   - `letter-spacing: var(--typography-headline-small-letter-spacing);`
