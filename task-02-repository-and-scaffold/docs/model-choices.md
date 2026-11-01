@@ -6,7 +6,7 @@ Here is why I picked each part of the tech stack and what would go wrong without
 
 ## 1. Next.js 14 with App Router
 - **What I chose:** Next.js 14 using the App Router.
-- **Why I chose it:** Next.js runs code on the server by default. For a law firm portal, this is very important. Client cases, invoices, and legal documents should stay on the server. Only the records meant for the logged-in client ever get sent to their phone.
+- **Why I chose it:** Next.js runs code on the server by default. For a law firm web app, this is very important. Client cases, invoices, and legal documents should stay on the server. Only the records meant for the logged-in client ever get sent to their phone.
 - **What breaks without it:** With older React setups, developers often download all data to the browser and filter it there. If someone inspects the network tab, they could see another client's private legal information.
 
 ---

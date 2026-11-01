@@ -31,7 +31,7 @@ Next.js tries to download Google Fonts during the build. When building offline o
 A false success is when an app looks like it worked, but failed in the background—like a form saying "Saved" when the database never actually recorded the change. Deliberate breakage tests (like trying to start two servers on the same port or importing server code into the client) prove that our safety checks actively catch mistakes and warn us, rather than failing.
 
 ### 11. Why can't clients create their own accounts or reset their own PINs?
-CaseFlo is an invite-only legal portal, not a public social network. Allowing public sign-ups or automated resets would let strangers try to probe case numbers or guess client emails. To protect confidentiality, only law firm staff can create client accounts and manually generate 6-digit PINs. This completely eliminates automated bot attacks and unauthorized account creation.
+CaseFlo is an invite-only legal web app, not a public consumer app. Allowing public sign-ups or automated resets would let strangers try to probe case numbers or guess client emails. To protect confidentiality, only law firm staff can create client accounts and manually generate 6-digit PINs. This completely eliminates automated bot attacks and unauthorized account creation.
 
 12. If you were starting this scaffold again, what is one thing you would do differently?
 I would update my Windows PowerShell execution policy to RemoteSigned before starting anything. I lost momentum because my terminal blocked standard scripts like npm run typecheck. Fixing the environment permissions first makes the whole scaffolding process much smoother.

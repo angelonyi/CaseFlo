@@ -12,7 +12,7 @@ export default function HomePage() {
           <h1 className={styles.title}>CaseFlo</h1>
           
           <p className={styles.tagline}>
-            Law firm client portal. Check case updates, read approved documents, and pay fees seamlessly.
+            Law firm web app. Check case updates, read approved documents, and pay fees seamlessly.
           </p>
 
           <div className={styles.actionGroup}>
@@ -32,7 +32,7 @@ export default function HomePage() {
         </div>
 
         <footer className={styles.footer}>
-          &copy; {new Date().getFullYear()} CaseFlo. Strictly multi-tenant client portal.
+          &copy; {new Date().getFullYear()} CaseFlo. Strictly multi-tenant web app.
         </footer>
       </div>
     </main>

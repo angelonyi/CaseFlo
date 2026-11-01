@@ -1,7 +1,7 @@
 # Task Two: Setting Up the Repository and Scaffold
 
 ## What this task is about
-In this task, I set up the actual coding foundation for CaseFlo. CaseFlo is a web portal that law firms in Nigeria give to their clients. It allows clients to check case updates, download signed documents, and pay invoices.
+In this task, I set up the actual coding foundation for CaseFlo. CaseFlo is a web app that a law firm in Nigeria gives to its own clients. It allows clients to check case updates, download signed documents, and pay invoices.
 
 The main user I am keeping in mind is Chidi. Chidi runs a small business and uses an affordable Android phone on a normal 3G or 4G network. He doesn't have unlimited data or a super fast phone. Because of that, my setup needs to be fast, lightweight, and very secure so his legal records never get mixed up with someone else's.
 

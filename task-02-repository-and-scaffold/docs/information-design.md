@@ -6,7 +6,7 @@ The person using this screen is Chidi. He is a client of a law firm. He is openi
 He didn't come here to browse around. He came with one specific goal in mind: either to see if the lawyer uploaded an update on his case, download a signed agreement, or pay an invoice.
 
 He doesn't want to see complicated menus, pop-ups, or legal jargon. He needs to know immediately:
-1. Is this my law firm's portal?
+1. Is this my law firm's web app?
 2. Where do I click to sign in?
 3. Are my records safe?
 
@@ -23,7 +23,7 @@ Here is how the elements appear from top to bottom on a phone screen:
 |                                          |
 |               CaseFlo                    | <- 2. Clear title in DM Sans
 |                                          |
-|     Law firm client portal. Check case   | <- 3. One sentence explaining what
+|     Law firm web app. Check case         | <- 3. One sentence explaining what
 |    updates, read approved documents,     |    this app does
 |         and pay fees seamlessly.         |
 |                                          |
@@ -40,7 +40,7 @@ Here is how the elements appear from top to bottom on a phone screen:
 |   | Records isolated by session      |   |
 |   +----------------------------------+   |
 |                                          |
-|   (c) 2026 CaseFlo. Multi-tenant portal  | <- 7. Clean footer
+|   (c) 2026 CaseFlo. Multi-tenant web app | <- 7. Clean footer
 +------------------------------------------+
 ```
 
